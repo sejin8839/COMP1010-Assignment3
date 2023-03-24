@@ -110,10 +110,7 @@ for x in range(1, 200, 3):
     Apple.dot(dotSize,"black")
     Apple.width(appleWidth)
     colorIndex += 1
-
     # It increases width AND dotSize in every loop
     appleWidth += 0.1
     dotSize += 2
 turtle.exitonclick()
-
-
