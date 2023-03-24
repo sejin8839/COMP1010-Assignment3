@@ -14,9 +14,20 @@ window = turtle.Screen()
 # Make a turtle named triangle and use that turtle to draw
 # a triangle with one corner at position x = 0 and y = 0
 
+import turtle
+window = turtle.Screen()
+triangle = turtle.Turtle()
+triangle.width(2)
+triangle.goto(0,0)
+triangle.dot()
+triangle.goto(200,0)
+triangle.dot()
+triangle.goto(100,200)
+triangle.dot()
+triangle.goto(0,0)
 
 
-done()
+
 
 
 # A2 b)
@@ -27,7 +38,10 @@ done()
 # The turtle should not leave any other lines except the zig zag.
 
 
-done()
+
+
+
+
 
 # A2 c)
 # Make a turtle named spiral and use that turtle to draw
@@ -38,13 +52,15 @@ done()
 # The turtle should not leave any other lines except the spiral.
 
 import turtle
+window = turtle.Screen()
 spiral = turtle.Turtle()
-turtle.color('green')
-turtle.setup(0, -100)
-
-
-
-done()
+spiral.color('green')
+spiral.setup(0, -100)
+spiral.width(1)
+for x in range(1,200,5):
+    spiral.forward(x)
+    spiral.left(90)
+spiral.exitonclick()
 
 
 # A2 d)
